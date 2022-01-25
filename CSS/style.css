@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    min-height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    margin: 1em;
+    max-height: 900px;
+    max-width: 900px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-top {
+    background-color: hsl(246, 80%, 60%);
+    padding: 2em;
+    height: 70%;
+}
+.profile-buttons {
+    height: 30%;
+    padding: 1em 1em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile {
+    background-color: hsl(235, 46%, 20%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container {
+    min-width: 200px;
+    margin-left: 1em;
+}
+.row1 {
+    margin-bottom: 1em;
+}
+.row2 {
+    margin-top: 1em;
+}
+.profile-pic {
+    width: 100%;
+    padding-right: 60%;
+}
+.report {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.report-card {
+    background-color: hsl(235, 46%, 20%);
+    padding: 1em;
+}
+.report-card,
+.background,
+.profile,
+.profile-top {
+    border-radius: 9px;
+}
+.background-work,
+.background-play,
+.background-study,
+.background-exercise,
+.background-social,
+.background-self-care {
+    border-radius: 13px;
+}
+.row1,
+.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+.background-work,
+.background-play,
+.background-study,
+.background-exercise,
+.background-social,
+.background-self-care {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.background-work {
+    background-image: url(../images/icon-work.svg);
+    background-color: hsl(15, 100%, 70%);
+}
+.background-play {
+    background-image: url(../images/icon-play.svg);
+    background-color: hsl(195, 74%, 62%);
+}
+.background-study {
+    background-image: url(../images/icon-study.svg);
+    background-color: hsl(348, 100%, 68%);
+}
+.background-exercise {
+    background-image: url(../images/icon-exercise.svg);
+    background-color: hsl(145, 58%, 55%);
+}
+.background-social {
+    background-image: url(../images/icon-social.svg);
+    background-color: hsl(264, 64%, 52%);
+}
+.background-self-care {
+    background-image: url(../images/icon-self-care.svg);
+    background-color: hsl(43, 84%, 65%);
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0 0 0.25em 0;
+}
+p {
+    color: hsl(236, 100%, 87%);
+    margin: 0;
+    font-weight: 300;
+}
+a {
+    color: hsl(235, 45%, 61%);
+    text-decoration: none;
+    font-weight: 600;
+}
+.report-card-text {
+    display: flex;
+    justify-content: space-between;
+}
+.report-card-dot img{
+    padding: 0;
+}
+a:hover,
+a:focus,
+.active {
+    filter: brightness(0) invert(1);
+}
+.profile-name {
+    font-size: 2rem;
+    margin: 0;
+}
+.profile-top p {
+    margin-top: 2em;
+}
+.displayNone {
+    display: none;
+}
+@media (max-width:900px) {
+    body {
+        flex-direction: column;
+    }
+    .profile {
+        margin: 0;
+        margin-bottom: 2em;
+        padding: 0;
+    }
+    .profile-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1em;
+    }
+    .profile-pic-div {
+        width: 25%;
+    }
+    .profile-pic {
+        padding: 0;
+    }
+    a {
+        margin: 0;
+    }
+    .profile-buttons {
+        flex-direction: row;
+        padding: 2em;
+    }
+    .container {
+        margin: 0;
+        margin-bottom: 2em;
+    }
+    .row1,
+    .row2 {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+/*
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+*/
