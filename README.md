@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:[Link to the github](https://github.com/KodeRenaldas/Time-tracking-dashboard)
+- Solution URL: [Link to the github repository](https://github.com/KodeRenaldas/Time-tracking-dashboard)
 
 ## My process
 
