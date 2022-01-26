@@ -83,7 +83,7 @@ function dailyEvent() {
   dailyB.classList.add("active")
   weeklyB.classList.remove("active")
   monthlyB.classList.remove("active")
-  fetch("js/data.json")
+  fetch("data.json")
     .then(res => {
       if (!res.ok) {
         throw Error ("Could not load data")
@@ -114,7 +114,7 @@ function weeklyEvent() {
   weeklyB.classList.add("active")
   dailyB.classList.remove("active")
   monthlyB.classList.remove("active")
-  fetch("js/data.json")
+  fetch("data.json")
     .then(res => {
       if (!res.ok) {
         throw Error ("Could not load data")
@@ -145,7 +145,7 @@ function monthlyEvent() {
   dailyB.classList.remove("active")
   weeklyB.classList.remove("active")
   monthlyB.classList.add("active")
-  fetch("js/data.json")
+  fetch("data.json")
     .then(res => {
       if (!res.ok) {
         throw Error ("Could not load data")
@@ -169,3 +169,12 @@ function monthlyEvent() {
     .catch(err => console.error(err))
 }
 monthlyB.addEventListener("click", monthlyEvent)
+
+//Need experimenting with, somehow make input box appear
+async function getJson() {
+  let response = await fetch("data.json")
+  let hours = await response.json()
+  hours[0].timeframes.daily.current = 21
+  console.log(hours[0].timeframes.daily.current)
+}
+getJson()
