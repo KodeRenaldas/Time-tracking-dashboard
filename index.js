@@ -169,12 +169,3 @@ function monthlyEvent() {
     .catch(err => console.error(err))
 }
 monthlyB.addEventListener("click", monthlyEvent)
-
-//Need experimenting with, somehow make input box appear
-async function getJson() {
-  let response = await fetch("data.json")
-  let hours = await response.json()
-  hours[0].timeframes.daily.current = 21
-  console.log(hours[0].timeframes.daily.current)
-}
-getJson()

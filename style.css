@@ -96,27 +96,27 @@ body {
     background-position: top right;
 }
 .background-work {
-    background-image: url(../images/icon-work.svg);
+    background-image: url(images/icon-work.svg);
     background-color: hsl(15, 100%, 70%);
 }
 .background-play {
-    background-image: url(../images/icon-play.svg);
+    background-image: url(images/icon-play.svg);
     background-color: hsl(195, 74%, 62%);
 }
 .background-study {
-    background-image: url(../images/icon-study.svg);
+    background-image: url(images/icon-study.svg);
     background-color: hsl(348, 100%, 68%);
 }
 .background-exercise {
-    background-image: url(../images/icon-exercise.svg);
+    background-image: url(images/icon-exercise.svg);
     background-color: hsl(145, 58%, 55%);
 }
 .background-social {
-    background-image: url(../images/icon-social.svg);
+    background-image: url(images/icon-social.svg);
     background-color: hsl(264, 64%, 52%);
 }
 .background-self-care {
-    background-image: url(../images/icon-self-care.svg);
+    background-image: url(images/icon-self-care.svg);
     background-color: hsl(43, 84%, 65%);
 }
 h1 {
